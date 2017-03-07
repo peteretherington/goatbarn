@@ -1,0 +1,334 @@
+// PARTIALS
+@import "partials/setup";
+@import "partials/typography";
+@import "partials/_scoreboard";
+
+
+// VARIABLES
+$tint: rgba(0,0,0,0.8);
+$whiteBorder: 1px solid rgba(250,250,250,0.6);
+$yellowBorder: 3px solid yellow;
+
+
+// MEDIA QUERIES
+$large: "(max-width: 992px)";
+$medium: "(max-width: 720px)";
+$small: "(max-width: 540px)";
+$extrasmall: "(max-width: 300px)";
+
+
+// MIXINS
+@mixin gridSection($gridWidth) {
+	width: $gridWidth;
+	margin: 8px;
+	padding: 0;
+	letter-spacing: 0;
+	position: relative;
+	z-index: 1;
+}
+@mixin gridImg($imgWidth) {
+	width: $imgWidth;
+	margin: 8px;
+	padding: 0;
+	letter-spacing: 0;
+	position: relative;
+	z-index: 1;
+	@media #{$small} {
+		margin: 2px;
+	}
+}
+
+
+// JAVASCRIPT CLASSES
+.imageSelected {
+	border: $yellowBorder;
+}
+.valid {
+	pointer-events: none;
+  	opacity: 0.4;
+}
+.goat-overlay {
+	// position: absolute;
+	// z-index: 0;
+	transform: translate(-10%, 25%);
+	width: 15%;
+}
+
+
+// ANIMATION
+header .animated {
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 2s;
+	-webkit-animation-iteration-count: 1;
+}
+form.animated {
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-delay: 3s;
+	-webkit-animation-iteration-count: 1;
+}
+p.animated.flash {
+	-webkit-animation-duration: .7s;
+	-webkit-animation-iteration-count: 5;
+}
+
+
+// WRAPPER
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+
+// BODY
+body {
+	background: url(../assets/Canada_Hockey_Place.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+
+// HEADER
+header {
+	text-align: center;
+	background: $tint;
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.title {
+		margin: 0;
+		padding: .2em 0 0 0;
+		min-width: 640px;
+		width: 50%;
+		@media #{$large} {
+			min-width: 600px;
+		}
+		@media #{$small} {
+			min-width: 300px;
+		}
+		img.goat {
+			width: 10%;
+			transform: translate(-5%, 10%);
+			// @media #{$small} {
+			// 	width: 20%;
+			// 	transform: translate(30%, 160%);
+			// }
+		}
+	}
+	.instructionsIntro {
+		font-size: 3em;
+		margin: .1em 0 0 0;
+		@media #{$medium} {
+			font-size: 2em;
+		}
+	}
+	.instructions {
+		margin: 0 0 .5em 0;
+		padding: 0;
+		li {
+			float: left;
+			margin-right: 3em;
+			@media #{$medium} {
+				margin-right: 3em;
+			}
+			@media #{$small} {
+				float: none;
+				text-align: left;
+				margin-right: none;
+			}
+		}
+	}
+	.instructions li:last-child {
+		margin: 0 0 .2em 0;
+	}
+}
+
+
+
+// MAIN
+form {
+	display: flex;
+	justify-content: space-around;
+	margin: 2em auto 4em auto;
+	width: 90%;
+	@media #{$large} {
+		flex-direction: column;
+	}
+	@media #{$small} {
+		margin: 0;
+		width: 95%;
+	}
+	fieldset {
+		background: $tint;
+		border: none;
+		width: 100%;
+		padding: 0;
+		transform: translateY(-1.5%);
+		input[type=radio] {
+			display: none;
+		}
+	}
+}
+
+
+// IMAGE GRIDS
+.facesSection {
+	@include gridSection(35%);
+	@media #{$large} {
+		@include gridSection(100%);
+	}
+	img {
+		@include gridImg(calc(33.33% - 16px));
+		transition: transform .8s ease-out;
+		@media #{$large} {
+			@include gridImg(calc(16.6% - 16px));
+		}
+		@media #{$small} {
+			@include gridImg(calc(25% - 4px));
+		}
+		&:hover {
+			transform: scale(1.4);
+			z-index: 10;
+		}
+		&:focus {
+			transform: scale(1.4);
+			z-index: 10;
+		}
+	}
+}
+.numbersSection {
+	@include gridSection(35%);
+	@media #{$large} {
+		@include gridSection(100%);
+	}
+	img {
+		@include gridImg(calc(33.33% - 16px));
+		transition: transform .8s ease-out;
+		@media #{$large} {
+			@include gridImg(calc(16.6% - 16px));
+		}
+		@media #{$small} {
+			@include gridImg(calc(25% - 4px));
+		}
+		&:hover {
+			transform: scale(1.4);
+			z-index: 10;
+		}
+		&:focus {
+			transform: scale(1.4);
+			z-index: 10;
+		}
+	}
+}
+
+
+
+// MIDDLE SECTION
+.infoSection {
+	width: 25%;
+	margin: 0 1em;
+	@media #{$large} {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.wrapper {
+			@media #{$large} {
+				display: flex;
+				width: 100%;
+		}
+		@media #{$small} {
+			flex-direction: column;
+		}
+	}
+	.matchBox {
+		text-align: center;
+		min-height: 150px;
+		background: $tint;
+		margin: 0 0 2em 0;
+		padding: 2em 0 0 0;
+		@media #{$large} {
+			width: calc(50% - 20px);
+			margin: 0 10px;
+			min-height: 100px;
+			padding: 1em 0 0 0;
+		}
+		@media #{$small} {
+			display: flex;
+			width: 100%;
+			margin: 0;
+			min-height: 50px;
+			padding: .5em 0;
+			justify-content: space-around;
+		}
+		.submitMatch {
+			padding: .2em 1.5em;
+			transition: all .5s;
+			@media #{$small} {
+				padding: 0;
+				width: 30%;
+			}
+			&:hover {
+				color: dodgerblue;
+			}
+		}
+		p {
+			margin: .5em 0 0 0;
+			@media #{$small} {
+				padding: 0;
+				margin: 0;
+				text-align: center;
+				max-width: 150px;
+				min-width: 125px;
+			}
+		}
+	}
+	.scoreBoard {
+		.homeScore, .awayScore {
+			padding: 0 .5em;
+		}
+	}
+	.factBox {
+		text-align: center;
+		background: $tint;
+		margin: .5em 0;
+		padding: 2em 1em;
+	}
+}
+
+
+// FOOTER
+footer {
+	text-align: center;
+	background: $tint;
+	margin: 0;
+	padding: 0;
+	ul {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.wrapper {
+		text-align: center;
+		margin: 0 auto;
+		.copyright {
+			display: flex;
+			margin: 0;
+			padding: 0 0 2em 0;
+			line-height: 0;
+			justify-content: center;
+			line-height: 120%;
+		}
+	}
+}
+.shareLinks {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 2em 0 1em 0;
+	list-style-type: none;
+	.facebookShare {
+		transform: translateY(30%);
+		margin: 0 0 0 3em;
+	}
+}

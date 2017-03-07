@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/main.css" class="style">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Pragati+Narrow|Anton|Orbitron" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+	<title>G.O.A.T. BARN</title>
+
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<h1 class="title UC animated bounceInDown"><span class="green">G.o.a.t. <img src="assets/goat.png" class="goat"> <span class="red">Barn</span></h1>
+			<p class="instructionsIntro animated bounceInRight">Think you know hockey's <span class="red">Greatest of All Time</span>? Let's find out.</p>
+			<ol class="instructions animated bounceInLeft">
+				<li>Select a player</li>
+				<li>Select a number</li>
+				<li>Click 'MATCH' to verify your selection</li>
+			</ol>
+		</div> <!-- wrapper -->
+	</header>
+	<div class="container">
+	<main>
+		<form class="animated fadeIn">
+			<section class="facesSection">
+				<div class="wrapper">
+					<fieldset class="playersFacesList">
+						<!-- Javascript appends faces here -->
+					</fieldset>
+				</div> <!-- wrapper -->
+			</section> <!-- facesSection -->
+			<section class="infoSection">
+				<div class="wrapper ">
+					<!-- <div class="matchBox"></div> -->
+					<div class="matchBox UC">
+						<input type="submit" value="MATCH" class="submitMatch">
+						<div class="validator"></div>
+					</div> <!-- matchBox -->
+					<div class="wrapperScoreboard">
+						<div class="homeTeamMain">
+							<div class="teamTitle"><h3>HOME</h3></div>
+							<div class="scoreSection">
+								<div class="scoreContainer homeScore">
+								</div> <!-- scoreContainer -->
+							</div> <!-- scoreSection -->
+						</div> <!-- homeTeamMain -->
+						<div class="scoreboardMain__Container">
+							<div class="scoreboardMain__counter">
+								<div id="time"><h5></h5></div>
+							</div> <!-- scoreboardMain__counter -->
+							<div class="logo">
+								<img src="images/nhl_logo.png" alt="">
+							</div> <!-- logo -->
+							<div class="scoreboardMain__period">
+								<div class="scoreboardMain__period--title"><h3>PERIOD</h3></div>
+								<div class="scoreboardMain__period--counter">
+									<div class="periodCounterContainer">
+										<h4>1</h4>
+									</div> <!-- periodCounterContainer -->
+								</div> <!-- scoreboardMain__period-counter -->
+							</div> <!-- scoreboardMain__period -->
+						</div> <!-- scoreboardMain__container -->
+						<div class="awayTeamMain">
+							<div class="teamTitle"><h3>AWAY</h3></div>
+							<div class="scoreSection">
+								<div class="scoreContainer awayScore">
+								</div> <!-- scoreContainer -->
+							</div> <!-- scoreSection -->
+						</div> <!-- awayTeamMain -->
+					</div> <!-- scoreBoard -->
+					<!-- <div class="factBox"></div> -->
+				</div> <!-- wrapper -->
+			</section> <!-- center -->
+			<section class="numbersSection">
+				<div class="wrapper">
+					<fieldset class="playersNumbersList">
+						<!-- Javascript appends numbers here -->
+					</fieldset> 
+				</div> <!-- wrapper -->
+			</section> <!-- numbersSection -->
+		</form>
+	</main>
+	</div>
+	<footer>
+		<div class="wrapper">
+			<div class="shareLinks">
+				<div class="twitterShare">
+						<a class="twitter-share-button"
+					  href="https://twitter.com/intent/tweet?text=Think%20you%20know%20the%20G.O.A.T%20hockey%20players?%20Find%20out:%20www.goatbarn.ca"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</div> <!-- twitterShare -->
+				<div class="facebookShare">
+					<div class="fb-share-button" data-href="http://www.goatbarn.ca" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.goatbarn.ca%2F&amp;src=sdkpreparse">Share</a></div>
+				</div> <!-- facebookShare -->
+			</div> <!-- shareLinks -->
+			<p class="copyright">
+				&copy 2017 Designed by Alex G. & Peter E.
+			</p> <!-- copyright -->
+		</div> <!-- wrapper -->
+	</footer>
+
+
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+	</script>
+	<script src="js/script.js"></script>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=310067139349590";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+
+</body>
+</html>

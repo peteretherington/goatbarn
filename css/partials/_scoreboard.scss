@@ -1,0 +1,146 @@
+$large: "(max-width: 992px)";
+$medium: "(max-width: 720px)";
+$small: "(max-width: 540px)";
+$extrasmall: "(max-width: 300px)";
+
+
+h3 {
+	font-family: 'Anton', sans-serif;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	letter-spacing: 4px;
+	@media #{$medium} {
+		font-size: 14px;
+	}
+}
+
+h4, .homeScore, .awayScore {
+	font-family: 'Orbitron', sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #f9a619;
+	font-size: 25px;
+	@media #{$medium} {
+		font-size: 18px;
+	}
+}
+
+#time {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 25px;
+	padding: 0;
+	margin: 0;
+	color: #ec1c24;
+	@media #{$medium} {
+		font-size: 18px;
+	}
+	@media #{$small} {
+		text-align: center;
+	}
+}
+
+.wrapperScoreboard {
+	// max-width: 100%;
+	display: flex;
+	background: #2d2a2b;
+	border: 2px solid #b4975a;
+	@media #{$large} {
+		width: calc(50% - 20px);
+		margin: 0 10px;
+	}
+	@media #{$small} {
+		width: 100%;
+		margin: 10px 0 10px 0;
+	}
+}
+
+.awayTeamMain, .homeTeamMain {
+	width: 30%;
+}
+
+.teamTitle {
+	padding: 10px 15px;
+}
+
+.scoreSection {
+	margin: 10px 20px 20px 20px;
+}
+
+.scoreContainer {
+	display: flex;
+	width: 100%;
+	background: black;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 0 0 0;
+	@media #{$small} {
+		justify-content: center;
+	}
+}
+
+.scoreboardMain__Container {
+	width: 40%;
+	.logo {
+		padding: 10px 0;
+		text-align: center;
+		img {
+			width: 40px;
+			height: 100%;
+			@media #{$medium} {
+				width: 20px;
+			}
+		}
+	}
+}
+
+.scoreboardMain__counter {
+	text-align: center;
+	background: black;
+	border: 2px solid #b4975a;
+	border-top: 0;
+	padding: 10px 0 6px 0;
+	@media #{$small} {
+		padding: 4px 0 0 0;
+	}
+}
+
+.scoreboardMain__period {
+	display: flex;
+	padding-bottom: 10px;
+}
+
+.scoreboardMain__period--title{
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	h3 {
+		font-size: 18px;
+		@media #{$medium} {
+			font-size: 14px;
+		}
+	}
+}
+
+.scoreboardMain__period--counter {
+	width: 30%;
+	.periodCounterContainer {
+		background: black;
+		h4 {
+			font-size: 25px;
+			color: #a6ce39;
+			text-align: right;
+			padding: 10px 10px 0 0;
+			@media #{$medium} {
+				font-size: 18px;
+			}
+			@media #{$small} {
+				text-align: center;
+				padding: 4px 0 0 0;
+			}
+		}
+	}
+}

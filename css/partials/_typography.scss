@@ -1,0 +1,93 @@
+// MEDIA QUERIES
+$large: "(max-width: 992px)";
+$medium: "(max-width: 720px)";
+$small: "(max-width: 540px)";
+$extrasmall: "(max-width: 300px)";
+
+// UPPERCASE
+.UC {
+	text-transform: uppercase;
+}
+
+
+// VARIABLES
+$twitter: #64b2f8;
+
+
+// FONT FAM
+$pragati: "Pragati Narrow", sans-serif;
+$allerta: "Allerta Stencil", sans-serif;
+
+// COLOR SPANS
+.red {
+	color: red;
+}
+.green {
+	color: rgb(21,157,26);
+}
+
+
+// BODY
+body {
+	font-size: 62.5%;
+	letter-spacing: 1px;
+	font-family: $pragati;
+	color: #fff;
+}
+
+
+// HEADER
+.title {
+	font-family: $allerta;
+	font-size: 7em;
+	letter-spacing: 2px;
+	@media #{$medium} {
+		font-size: 5em;
+	}
+	@media #{$small} {
+		font-size: 3.3em;
+	}
+}
+.instructions {
+	font-size: 1.8em;
+	@media #{$medium} {
+		font-size: 1.5em;
+
+		
+	}
+}
+
+
+// INFO SECTION
+.matchBox {
+	font-size: 1.5em;
+}
+.validator {
+	font-size: 1.5rem;
+}
+.scoreBoard {
+	font-size: 2em;
+}
+
+// GHOST SPACE KILLA
+.facesSection, .numbersSection, .clickBox {
+	font-size: 0;
+}
+
+
+// FOOTER
+.copyright {
+	font-family: $allerta;
+	font-size: 2em;
+	color: #aaa;
+	text-shadow: 0 0 2em #000;
+	a {
+		color: #aaa;
+	}
+}
+.shareLinks {
+	a {
+		color: $twitter;
+		font-size: 3em;
+	}
+}

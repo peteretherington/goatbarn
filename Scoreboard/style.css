@@ -1,0 +1,101 @@
+h3 {
+  font-family: 'Anton', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 4px; }
+
+h4 {
+  font-family: 'Orbitron', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #f9a619;
+  font-size: 60px; }
+
+#time {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  color: #ec1c24; }
+
+.wrapperScoreboard {
+  max-width: 600px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2d2a2b;
+  border: 5px solid #b4975a; }
+
+.awayTeamMain, .homeTeamMain {
+  width: 30%; }
+
+.teamTitle {
+  padding: 10px 15px; }
+
+.scoreSection {
+  margin: 10px 20px 20px 20px; }
+
+.scoreContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  background: black;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .scoreContainer h4 {
+    padding: 10px 10px 0 0; }
+
+.scoreboardMain__Container {
+  width: 40%; }
+  .scoreboardMain__Container .logo {
+    padding: 10px 0;
+    text-align: center; }
+    .scoreboardMain__Container .logo img {
+      width: 40px;
+      height: 100%; }
+
+.scoreboardMain__counter {
+  text-align: right;
+  background: black;
+  border: 5px solid #b4975a;
+  border-top: 0;
+  padding: 10px 10px 0 0; }
+
+.scoreboardMain__period {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px; }
+
+.scoreboardMain__period--title {
+  width: 70%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .scoreboardMain__period--title h3 {
+    font-size: 30px; }
+
+.scoreboardMain__period--counter {
+  width: 30%; }
+  .scoreboardMain__period--counter .periodCounterContainer {
+    background: black; }
+    .scoreboardMain__period--counter .periodCounterContainer h4 {
+      font-size: 50px;
+      color: #a6ce39;
+      text-align: right;
+      padding: 10px 10px 0 0; }

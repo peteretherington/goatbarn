@@ -1,0 +1,675 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.UC {
+  text-transform: uppercase; }
+
+.red {
+  color: red; }
+
+.green {
+  color: #159d1a; }
+
+body {
+  font-size: 62.5%;
+  letter-spacing: 1px;
+  font-family: "Pragati Narrow", sans-serif;
+  color: #fff; }
+
+.title {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 7em;
+  letter-spacing: 2px; }
+  @media (max-width: 720px) {
+    .title {
+      font-size: 5em; } }
+  @media (max-width: 540px) {
+    .title {
+      font-size: 3.3em; } }
+
+.instructions {
+  font-size: 1.8em; }
+  @media (max-width: 720px) {
+    .instructions {
+      font-size: 1.5em; } }
+
+.matchBox {
+  font-size: 1.5em; }
+
+.validator {
+  font-size: 1.5rem; }
+
+.scoreBoard {
+  font-size: 2em; }
+
+.facesSection, .numbersSection, .clickBox {
+  font-size: 0; }
+
+.copyright {
+  font-family: "Allerta Stencil", sans-serif;
+  font-size: 2em;
+  color: #aaa;
+  text-shadow: 0 0 2em #000; }
+
+.shareLinks a {
+  color: #64b2f8;
+  font-size: 3em; }
+
+h3 {
+  font-family: 'Anton', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 4px; }
+  @media (max-width: 720px) {
+    h3 {
+      font-size: 14px; } }
+
+h4, .homeScore, .awayScore {
+  font-family: 'Orbitron', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #f9a619;
+  font-size: 25px; }
+  @media (max-width: 720px) {
+    h4, .homeScore, .awayScore {
+      font-size: 18px; } }
+
+#time {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  color: #ec1c24; }
+  @media (max-width: 720px) {
+    #time {
+      font-size: 18px; } }
+  @media (max-width: 540px) {
+    #time {
+      text-align: center; } }
+
+.wrapperScoreboard {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: #2d2a2b;
+  border: 2px solid #b4975a; }
+  @media (max-width: 992px) {
+    .wrapperScoreboard {
+      width: calc(50% - 20px);
+      margin: 0 10px; } }
+  @media (max-width: 540px) {
+    .wrapperScoreboard {
+      width: 100%;
+      margin: 10px 0 10px 0; } }
+
+.awayTeamMain, .homeTeamMain {
+  width: 30%; }
+
+.teamTitle {
+  padding: 10px 15px; }
+
+.scoreSection {
+  margin: 10px 20px 20px 20px; }
+
+.scoreContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: black;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4px 0 0 0; }
+  @media (max-width: 540px) {
+    .scoreContainer {
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.scoreboardMain__Container {
+  width: 40%; }
+  .scoreboardMain__Container .logo {
+    padding: 10px 0;
+    text-align: center; }
+    .scoreboardMain__Container .logo img {
+      width: 40px;
+      height: 100%; }
+      @media (max-width: 720px) {
+        .scoreboardMain__Container .logo img {
+          width: 20px; } }
+
+.scoreboardMain__counter {
+  text-align: center;
+  background: black;
+  border: 2px solid #b4975a;
+  border-top: 0;
+  padding: 10px 0 6px 0; }
+  @media (max-width: 540px) {
+    .scoreboardMain__counter {
+      padding: 4px 0 0 0; } }
+
+.scoreboardMain__period {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px; }
+
+.scoreboardMain__period--title {
+  width: 70%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .scoreboardMain__period--title h3 {
+    font-size: 18px; }
+    @media (max-width: 720px) {
+      .scoreboardMain__period--title h3 {
+        font-size: 14px; } }
+
+.scoreboardMain__period--counter {
+  width: 30%; }
+  .scoreboardMain__period--counter .periodCounterContainer {
+    background: black; }
+    .scoreboardMain__period--counter .periodCounterContainer h4 {
+      font-size: 25px;
+      color: #a6ce39;
+      text-align: right;
+      padding: 10px 10px 0 0; }
+      @media (max-width: 720px) {
+        .scoreboardMain__period--counter .periodCounterContainer h4 {
+          font-size: 18px; } }
+      @media (max-width: 540px) {
+        .scoreboardMain__period--counter .periodCounterContainer h4 {
+          text-align: center;
+          padding: 4px 0 0 0; } }
+
+.imageSelected {
+  border: 3px solid yellow; }
+
+.valid {
+  pointer-events: none;
+  opacity: 0.4; }
+
+.goat-overlay {
+  -webkit-transform: translate(-10%, 25%);
+  -ms-transform: translate(-10%, 25%);
+  transform: translate(-10%, 25%);
+  width: 15%; }
+
+header .animated {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1; }
+
+form.animated {
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-iteration-count: 1; }
+
+p.animated.flash {
+  -webkit-animation-duration: .7s;
+  -webkit-animation-iteration-count: 5; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+body {
+  background: url(../assets/Canada_Hockey_Place.jpg) no-repeat 50% 50%;
+  background-size: cover; }
+
+header {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8); }
+  header .wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  header .title {
+    margin: 0;
+    padding: .2em 0 0 0;
+    min-width: 640px;
+    width: 50%; }
+    @media (max-width: 992px) {
+      header .title {
+        min-width: 600px; } }
+    @media (max-width: 540px) {
+      header .title {
+        min-width: 300px; } }
+    header .title img.goat {
+      width: 10%;
+      -webkit-transform: translate(-5%, 10%);
+      -ms-transform: translate(-5%, 10%);
+      transform: translate(-5%, 10%); }
+  header .instructionsIntro {
+    font-size: 3em;
+    margin: .1em 0 0 0; }
+    @media (max-width: 720px) {
+      header .instructionsIntro {
+        font-size: 2em; } }
+  header .instructions {
+    margin: 0 0 .5em 0;
+    padding: 0; }
+    header .instructions li {
+      float: left;
+      margin-right: 3em; }
+      @media (max-width: 720px) {
+        header .instructions li {
+          margin-right: 3em; } }
+      @media (max-width: 540px) {
+        header .instructions li {
+          float: none;
+          text-align: left;
+          margin-right: none; } }
+  header .instructions li:last-child {
+    margin: 0 0 .2em 0; }
+
+form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 2em auto 4em auto;
+  width: 90%; }
+  @media (max-width: 992px) {
+    form {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  @media (max-width: 540px) {
+    form {
+      margin: 0;
+      width: 95%; } }
+  form fieldset {
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 100%;
+    padding: 0;
+    -webkit-transform: translateY(-1.5%);
+    -ms-transform: translateY(-1.5%);
+    transform: translateY(-1.5%); }
+    form fieldset input[type=radio] {
+      display: none; }
+
+.facesSection {
+  width: 35%;
+  margin: 8px;
+  padding: 0;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 1; }
+  @media (max-width: 992px) {
+    .facesSection {
+      width: 100%;
+      margin: 8px;
+      padding: 0;
+      letter-spacing: 0;
+      position: relative;
+      z-index: 1; } }
+  .facesSection img {
+    width: calc(33.33% - 16px);
+    margin: 8px;
+    padding: 0;
+    letter-spacing: 0;
+    position: relative;
+    z-index: 1;
+    transition: -webkit-transform .8s ease-out;
+    transition: transform .8s ease-out;
+    transition: transform .8s ease-out, -webkit-transform .8s ease-out; }
+    @media (max-width: 540px) {
+      .facesSection img {
+        margin: 2px; } }
+    @media (max-width: 992px) {
+      .facesSection img {
+        width: calc(16.6% - 16px);
+        margin: 8px;
+        padding: 0;
+        letter-spacing: 0;
+        position: relative;
+        z-index: 1; } }
+  @media (max-width: 992px) and (max-width: 540px) {
+    .facesSection img {
+      margin: 2px; } }
+    @media (max-width: 540px) {
+      .facesSection img {
+        width: calc(25% - 4px);
+        margin: 8px;
+        padding: 0;
+        letter-spacing: 0;
+        position: relative;
+        z-index: 1; } }
+  @media (max-width: 540px) and (max-width: 540px) {
+    .facesSection img {
+      margin: 2px; } }
+    .facesSection img:hover {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+      z-index: 10; }
+    .facesSection img:focus {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+      z-index: 10; }
+
+.numbersSection {
+  width: 35%;
+  margin: 8px;
+  padding: 0;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 1; }
+  @media (max-width: 992px) {
+    .numbersSection {
+      width: 100%;
+      margin: 8px;
+      padding: 0;
+      letter-spacing: 0;
+      position: relative;
+      z-index: 1; } }
+  .numbersSection img {
+    width: calc(33.33% - 16px);
+    margin: 8px;
+    padding: 0;
+    letter-spacing: 0;
+    position: relative;
+    z-index: 1;
+    transition: -webkit-transform .8s ease-out;
+    transition: transform .8s ease-out;
+    transition: transform .8s ease-out, -webkit-transform .8s ease-out; }
+    @media (max-width: 540px) {
+      .numbersSection img {
+        margin: 2px; } }
+    @media (max-width: 992px) {
+      .numbersSection img {
+        width: calc(16.6% - 16px);
+        margin: 8px;
+        padding: 0;
+        letter-spacing: 0;
+        position: relative;
+        z-index: 1; } }
+  @media (max-width: 992px) and (max-width: 540px) {
+    .numbersSection img {
+      margin: 2px; } }
+    @media (max-width: 540px) {
+      .numbersSection img {
+        width: calc(25% - 4px);
+        margin: 8px;
+        padding: 0;
+        letter-spacing: 0;
+        position: relative;
+        z-index: 1; } }
+  @media (max-width: 540px) and (max-width: 540px) {
+    .numbersSection img {
+      margin: 2px; } }
+    .numbersSection img:hover {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+      z-index: 10; }
+    .numbersSection img:focus {
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+      transform: scale(1.4);
+      z-index: 10; }
+
+.infoSection {
+  width: 25%;
+  margin: 0 1em; }
+  @media (max-width: 992px) {
+    .infoSection {
+      width: 100%;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+  @media (max-width: 992px) {
+    .infoSection .wrapper {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; } }
+  @media (max-width: 540px) {
+    .infoSection .wrapper {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .infoSection .matchBox {
+    text-align: center;
+    min-height: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 0 2em 0;
+    padding: 2em 0 0 0; }
+    @media (max-width: 992px) {
+      .infoSection .matchBox {
+        width: calc(50% - 20px);
+        margin: 0 10px;
+        min-height: 100px;
+        padding: 1em 0 0 0; } }
+    @media (max-width: 540px) {
+      .infoSection .matchBox {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        min-height: 50px;
+        padding: .5em 0;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+    .infoSection .matchBox .submitMatch {
+      padding: .2em 1.5em;
+      transition: all .5s; }
+      @media (max-width: 540px) {
+        .infoSection .matchBox .submitMatch {
+          padding: 0;
+          width: 30%; } }
+      .infoSection .matchBox .submitMatch:hover {
+        color: dodgerblue; }
+    .infoSection .matchBox p {
+      margin: .5em 0 0 0; }
+      @media (max-width: 540px) {
+        .infoSection .matchBox p {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          max-width: 150px;
+          min-width: 125px; } }
+  .infoSection .scoreBoard .homeScore, .infoSection .scoreBoard .awayScore {
+    padding: 0 .5em; }
+  .infoSection .factBox {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    margin: .5em 0;
+    padding: 2em 1em; }
+
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0; }
+  footer ul {
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+  footer .wrapper {
+    text-align: center;
+    margin: 0 auto; }
+    footer .wrapper .copyright {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      padding: 0 0 2em 0;
+      line-height: 0;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      line-height: 120%; }
+
+.shareLinks {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2em 0 1em 0;
+  list-style-type: none; }
+  .shareLinks .facebookShare {
+    -webkit-transform: translateY(30%);
+    -ms-transform: translateY(30%);
+    transform: translateY(30%);
+    margin: 0 0 0 3em; }
